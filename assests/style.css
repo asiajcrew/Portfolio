@@ -1,0 +1,45 @@
+header nav ul {
+    position: -webkit-sticky;
+    position: sticky;
+    display: flex;
+    flex: wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+section img {
+    width: 20%;
+}
+
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section div {
+    width: 70%;
+}
+
+#work-experience h2 {
+    width: 100%;
+    text-align: center;
+}
+
+#project1 {
+    background-image: url("https://i.pinimg.com/originals/a7/21/15/a72115694d8a0f3c972a9b04a64c0159.png");
+    width: 100%;
+}
+/* place all ID styling above the class styles */
+.link {
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 40%;
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
