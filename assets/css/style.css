@@ -62,16 +62,6 @@ body li a {
     color: #ac8f3d9a;
 }
 
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-left: 25px;
-}
-
 .content {
     width: 75%;
     display: inline-block;
@@ -98,7 +88,7 @@ body li a {
     display: block;
     margin: 5px auto;
     max-width: 150px; 
-    float: left;
+    /* float: left; */
 }
 
 .about-me {
@@ -117,13 +107,13 @@ body li a {
 }
 
 .about-me h3 {
-    text-align: left;
+    text-align: center;
     color: #ffffff;   
 }
 
 .about-me p {
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     color: #ffffff;
     padding-bottom: 10px;
 }
@@ -138,23 +128,24 @@ body li a {
     margin-bottom: 10px;
 }
 
-.recent-work {
+.recent-work h2 {
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 40px;
+    font-size: 50px;
     margin: 0 auto 35px auto;
     border-bottom: 2px solid #ffffff;
     width: 50%;
     text-align: center;
 }
 
-.project-1 {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+.project-1-img {
     background-image: url("../images/project-1.jpg");
     background-size: cover;
     background-position: center;
+    display: block;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 50px
 }
 
 .project-1 a {
@@ -164,26 +155,29 @@ body li a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.project-1 a:hover {
-    border-bottom: 1px solid #ffffff;
-}
-
 .smaller-cards {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    flex: wrap;
+    justify-content: space-around;
 }
 
-.project-2 {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
+#project-2 {
     width: 49%;
+}
+
+.project-2-img {
     background-image: url("../images/project-2.jpg");
     background-size: cover;
     background-position: center;
-}
-
+    display: block;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 50px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    }
+    
 .project-2 a {
     font-size: 48px;
     text-decoration: none;
@@ -191,18 +185,22 @@ body li a {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
-.project-2 a:hover {
-    border-bottom: 1px solid #ffffff;
+#project-3 {
+    width: 49%;
 }
 
-.project-3 {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    width: 49%;
-    background-image: url("../images/project-3.jpg");
+.project-3-img {
     background-size: cover;
     background-position: center;
+    display: block;
+    height: 300px;
+    margin-bottom: 20px;
+    padding: 50px;
+    background-image: url("../images/project-3.jpg");
+    display: block;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .project-3 a {
@@ -210,10 +208,6 @@ body li a {
     text-decoration: none;
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-}
-
-.project-3 a:hover {
-    border-bottom: 1px solid #ffffff;
 }
 
 footer {
