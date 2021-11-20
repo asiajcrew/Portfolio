@@ -1,0 +1,9 @@
+body{
+    background-color: rgba(91, 133, 196, 0.281);
+}
+
+img {
+    border-style: dotted;
+    border-width: .2em;
+    border-color:rgba(91, 133, 196, 0.712);
+}

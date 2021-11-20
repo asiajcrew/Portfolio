@@ -13,6 +13,9 @@ header {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: #ac8e3d;
     color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 header div {
@@ -39,11 +42,9 @@ header div ul li:hover {
 body li a {
     color: #ffffff;
     text-decoration: none;
-
-}
-
-p {
-    font-size: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 .hero {
@@ -100,14 +101,19 @@ p {
     margin: 10px auto;
     max-width: 150px; 
 }
-.contact-info {
-    margin-bottom: 32px;
-    color: #ffffff;
-}
 
 .about-me h3 {
     margin-bottom: 10px;
     text-align: center;
+}
+
+.about-me p {
+    font-size: 16px;
+}
+
+.contact-info {
+    margin-bottom: 32px;
+    color: #ffffff;
 }
 
 .contact-info h3 {
@@ -151,6 +157,12 @@ p {
     border-bottom: 1px solid #ffffff;
 }
 
+.smaller-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 .project-2 {
     margin-bottom: 20px;
     padding: 50px;
@@ -191,12 +203,6 @@ p {
 
 .project-3 a:hover {
     border-bottom: 1px solid #ffffff;
-}
-
-.smaller-cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 footer {
