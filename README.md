@@ -1,9 +1,6 @@
-# Portflio
+# My Portflio
 
-## Challenge-2
-
-* Portoflio that contains name, photo/ avatar, and work history
-* Needs to contain navigation links in the header that direct user to the corresponding part of the web page
-* Work history sections needs to contain links that direct user to deployed webisite
-* First application photo in work history needs to be bigger than other application photos
-* Website needs to be responsive
+* This portoflio is a display of my recent web development work. It also conatins a bio andmy contact info.
+* Click on the links in the header to navigate to the corresponding part of the web page.
+* Recent work images are links that will direct the user to the deployed web page.
+* Website is responsive and will load on mobile screens with a max width of 680px.
