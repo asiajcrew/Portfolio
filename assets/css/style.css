@@ -48,7 +48,7 @@ body li a {
 }
 
 .hero {
-    height: 400px;
+    height: 500px;
     width: 100%;
     background-image: url("../images/hero-stars.gif");
     background-size: cover;
@@ -89,52 +89,63 @@ body li a {
     height: 100%;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #ac8e3d;
-}
-
-.about-me {
-    margin-bottom: 32px;
-    color: #ffffff;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .about-me img {
     display: block;
-    margin: 10px auto;
+    margin: 5px auto;
     max-width: 150px; 
+    float: left;
+}
+
+.about-me {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ffffff;
+}
+
+.about-me h2 {
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 35px;
+    margin: 0 auto 35px auto;
+    border-bottom: 2px solid #ffffff;
+    width: 50%;
 }
 
 .about-me h3 {
-    margin-bottom: 10px;
-    text-align: center;
+    text-align: left;
+    color: #ffffff;   
 }
 
 .about-me p {
     font-size: 16px;
+    text-align: left;
+    color: #ffffff;
+    padding-bottom: 10px;
 }
 
 .contact-info {
+    text-align: left;
     margin-bottom: 32px;
     color: #ffffff;
 }
 
 .contact-info h3 {
     margin-bottom: 10px;
-    text-align: center;
-}
-
-.contact-info img {
-    display: block;
-    margin: 10px auto;
-    max-width: 150px;
 }
 
 .recent-work {
-    text-align: center;
     color: #ffffff;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 40px;
     margin: 0 auto 35px auto;
     border-bottom: 2px solid #ffffff;
     width: 50%;
+    text-align: center;
 }
 
 .project-1 {
@@ -214,4 +225,39 @@ footer {
 
 footer h2 {
     font-size: 20px;
+}
+
+@media screen and (max-width: 680px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+        position: relative;
+    }
+
+    header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    header nav ul li a {
+        font-size: 20px;
+    }
+
+    footer h2, footer div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+      
+    .recent-work {
+        flex: 1 100%;
+    }
+
+    .about-me {
+        flex: 1 100%;
+    }
 }
